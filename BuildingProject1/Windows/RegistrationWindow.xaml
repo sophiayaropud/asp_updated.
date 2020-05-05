@@ -1,0 +1,46 @@
+﻿<Window x:Class="BuildingProject.RegistrationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Registration" Height="350" Width="800">
+    <Grid Margin="27,20,0,0" Height="282" VerticalAlignment="Top" HorizontalAlignment="Left" Width="746">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"></ColumnDefinition>
+            <ColumnDefinition Width="10"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"></RowDefinition>
+            <RowDefinition Height="35"></RowDefinition>
+            <RowDefinition Height="35"></RowDefinition>
+            <RowDefinition Height="35"></RowDefinition>
+            <RowDefinition Height="35"></RowDefinition>
+            <RowDefinition Height="35"></RowDefinition>
+            <RowDefinition Height="35"></RowDefinition>
+            <RowDefinition Height="35"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Content="First Name" Height="Auto" HorizontalAlignment="Right" FontSize="16" VerticalAlignment="Center"/>
+        <Label Grid.Row="1" Grid.Column="0" Content="Last Name" Height="Auto" HorizontalAlignment="Right" FontSize="16" VerticalAlignment="Center"/>
+        <Label Grid.Row="2" Grid.Column="0" Content="Email" Height="Auto" HorizontalAlignment="Right" FontSize="16" VerticalAlignment="Center"/>
+        <Label Grid.Row="3" Grid.Column="0" Content="Password" Height="Auto" HorizontalAlignment="Right" FontSize="16" VerticalAlignment="Center"/>
+        <Label Grid.Row="4" Grid.Column="0" Content="Confirm Password" Height="Auto" HorizontalAlignment="Right" FontSize="16" VerticalAlignment="Center"/>
+        <Label Grid.Row="5" Grid.Column="0" Content="Role" Height="Auto" HorizontalAlignment="Right" FontSize="16" VerticalAlignment="Center"/>
+        <TextBox Name="FirstName" Grid.Row="0" Grid.Column="3" TextWrapping="Wrap" HorizontalAlignment="Stretch" FontSize="16" VerticalAlignment="Center"/>
+        <TextBox Name="LastName" Grid.Row="1" Grid.Column="3" TextWrapping="Wrap" HorizontalAlignment="Stretch" FontSize="16" VerticalAlignment="Center"/>
+        <TextBox Name="Email" Grid.Row="2" Grid.Column="3" TextWrapping="Wrap" HorizontalAlignment="Stretch" FontSize="16" VerticalAlignment="Center"/>
+        <TextBox Name="Password" Grid.Row="3" Grid.Column="3" TextWrapping="Wrap" HorizontalAlignment="Stretch" FontSize="16" VerticalAlignment="Center"/>
+        <TextBox Name="ConfirmPassword" Grid.Row="4" Grid.Column="2" TextWrapping="Wrap" HorizontalAlignment="Stretch" FontSize="16" VerticalAlignment="Center"/>
+        <ComboBox Name="Role" Grid.Row="5" Grid.Column="2" Width="120" HorizontalAlignment="Left" FontSize="16" VerticalAlignment="Center">
+            <Label Content="Buyer"/>
+            <Label Content="Seller"/>
+            <Label Content="Admin"/>
+        </ComboBox>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="7" Grid.Column="2">
+            <Button Content="Submit" Width="120" HorizontalAlignment="Left" FontSize="16" VerticalAlignment="Center" Click="Register"/>
+            <Button Content="Go Back" Width="120" HorizontalAlignment="Left" FontSize="16" VerticalAlignment="Center" Click="Back" Margin="15,0,0,0"/>
+        </StackPanel>
+    </Grid>
+</Window>
